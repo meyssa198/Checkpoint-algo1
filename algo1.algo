@@ -1,0 +1,19 @@
+ALGORITHM check 
+VAR 
+mot : integer:=1 ;
+x : ch;
+v : integer:= 0;
+l: integer :=0;
+BEGIN
+REPEAT
+Read(x);
+l:=l+1;
+IF (x=’ ‘) THEN
+mot:=mot+1;
+END_IF
+IF(x in [‘a’,’A’,’e’,’E’,’i’,’I’,’o’,’O’,’u’,’U’] THEN
+v:=v+1;
+END_IF
+UNTIL(x=’.’)
+Write(“length =”,l,”nbr des mots =”,mot,”vowels=”,v);
+END
